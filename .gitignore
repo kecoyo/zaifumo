@@ -1,0 +1,26 @@
+# Mac
+.DS_Store
+
+# svn
+/.svn
+
+# vscode
+.vscode/
+
+# JetBrains
+.idea
+
+# node.js
+/node_modules
+npm-debug.log
+
+# yarn
+yarn-debug.log*
+yarn-error.log*
+
+lib/
+es/
+esm/
+dist/
+build/
+types/
