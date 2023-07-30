@@ -1,9 +1,9 @@
-# rc-danmaku
+# zaifumo
 
-[![npm-version](https://badgen.net/npm/v/rc-danmaku)](https://www.npmjs.com/package/rc-danmaku)
-[![github-stars](https://badgen.net/github/stars/BowenZ/rc-danmaku)](https://github.com/BowenZ/rc-danmaku)
-[![bundlephobia](https://badgen.net/bundlephobia/min/rc-danmaku)](https://bundlephobia.com/result?p=rc-danmaku@latest)
-![license](https://badgen.net/npm/license/rc-danmaku)
+[![npm-version](https://badgen.net/npm/v/zaifumo)](https://www.npmjs.com/package/zaifumo)
+[![github-stars](https://badgen.net/github/stars/kecoyo/zaifumo)](https://github.com/kecoyo/zaifumo)
+[![bundlephobia](https://badgen.net/bundlephobia/min/zaifumo)](https://bundlephobia.com/result?p=zaifumo@latest)
+![license](https://badgen.net/npm/license/zaifumo)
 
 🚀 React 弹幕组件 - 基于 React 17 和 TypeScript4 开发
 
@@ -12,11 +12,11 @@
 
 ## 🌰 示例页面
 
-🔗 [https://bowenz.github.io/pages/rc-danmaku/](https://bowenz.github.io/pages/rc-danmaku/)
+🔗 [https://bowenz.github.io/pages/zaifumo/](https://bowenz.github.io/pages/zaifumo/)
 
 ## 📦 安装
 
-`npm install rc-danmaku -S`
+`npm install zaifumo -S`
 
 ## 🚗 快速开始
 
@@ -24,7 +24,7 @@
 
 ```tsx
 import React, { useEffect, useRef } from 'react';
-import Danmaku from 'rc-danmaku';
+import Danmaku from 'zaifumo';
 
 const TestDanmaku: React.FC = () => {
   const danmakuInsRef = useRef<Danmaku | null>(null);
@@ -139,7 +139,7 @@ danmakuIns.clearQueue();
 ```tsx
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import Danmaku from 'rc-danmaku';
+import Danmaku from 'zaifumo';
 
 const textArr = Array.from(
   '通过对平面中竖直和水平方向的分析我们将宽泛的弹幕重叠问题收敛为轨道中相邻弹幕两两之间的追及问题最终获得了将候选弹幕挂载到合适轨道中的调度策略'

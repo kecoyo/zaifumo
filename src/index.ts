@@ -1,1 +1,2 @@
-export { default } from './Danmaku';
+export { default as Danmaku } from './Danmaku';
+export { default as utils } from './utils';
