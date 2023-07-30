@@ -5,7 +5,7 @@
 /.svn
 
 # vscode
-.vscode/
+# .vscode/
 
 # JetBrains
 .idea

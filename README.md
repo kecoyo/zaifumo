@@ -1,18 +1,9 @@
 # zaifumo
 
-[![npm-version](https://badgen.net/npm/v/zaifumo)](https://www.npmjs.com/package/zaifumo)
-[![github-stars](https://badgen.net/github/stars/kecoyo/zaifumo)](https://github.com/kecoyo/zaifumo)
-[![bundlephobia](https://badgen.net/bundlephobia/min/zaifumo)](https://bundlephobia.com/result?p=zaifumo@latest)
-![license](https://badgen.net/npm/license/zaifumo)
-
-🚀 React 弹幕组件 - 基于 React 17 和 TypeScript4 开发
+🚀 基于 TypeScript 5 开发
 
 > 自用开发，若发现问题欢迎提 issue，有功能需求欢迎提 pr 或者在 issue 中反馈。
 > 建议 package.json 中版本号锁定为安装时版本（因为目前为止还是自用开发，可能某次更新会对之前版本有影响，如果以后用的人多了，会考虑更加谨慎正规的更新）
-
-## 🌰 示例页面
-
-🔗 [https://bowenz.github.io/pages/zaifumo/](https://bowenz.github.io/pages/zaifumo/)
 
 ## 📦 安装
 

@@ -1,6 +1,6 @@
 {
   "name": "zaifumo",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "zaifumo",
   "keywords": [
     "zaifumo",
@@ -11,32 +11,48 @@
   "license": "MIT",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "types": "types/index.d.ts",
+  "types": "lib/index.d.ts",
   "files": [
     "lib",
-    "es",
-    "dist"
+    "es"
   ],
   "scripts": {
-    "build:es": "tsc --module esnext --outDir ./es",
-    "build:commonjs": "tsc --module commonjs --outDir ./lib",
-    "build:watch": "tsup --watch",
-    "build:types": "tsc -d --emitDeclarationOnly --outDir ./types --noEmit false",
-    "build": "npm run build:es && npm run build:commonjs && npm run build:types",
+    "build": "npm run build:es && npm run build:commonjs",
+    "build:commonjs": "rimraf ./lib && tsc --module commonjs --outDir ./lib",
+    "build:es": "rimraf ./es && tsc --module esnext --outDir ./es",
+    "clean": "rimraf ./lib && rimraf ./es",
     "lint": "eslint src --ext .ts,.tsx,.js,.jsx",
     "pub": "nrm use npm && npm run build && npm publish",
-    "tsup": "tsup",
-    "tsup-dts": "tsup src/index.ts --dts"
+    "start": "tsc --watch",
+    "tslint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
+    "tsup": "tsup src/index.ts --format=cjs,esm --dts --clean"
   },
   "prettier": "prettier-config-ljlx",
   "dependencies": {
-    "md5": "^2.3.0"
+    "execa": "^4.0.3",
+    "fs-extra": "^9.0.1",
+    "md5": "^2.3.0",
+    "shelljs": "^0.8.5",
+    "through2": "^4.0.2"
   },
   "devDependencies": {
+    "@types/ali-oss": "^6.16.7",
+    "@types/fs-extra": "^9.0.13",
+    "@types/lodash": "^4.14.191",
+    "@types/md5": "^2.3.2",
     "@types/node": "^20.4.5",
+    "@types/shelljs": "^0.8.12",
+    "@types/ua-parser-js": "^0.7.36",
+    "@types/universalify": "^1.0.0",
+    "chalk": "^4.1.0",
+    "cross-env": "^7.0.3",
     "prettier-config-ljlx": "^1.0.1",
+    "rimraf": "^5.0.1",
     "ts-node": "^10.9.1",
     "tslib": "^2.6.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-standard": "^8.0.1",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
   }
